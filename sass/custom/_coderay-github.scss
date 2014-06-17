@@ -1,4 +1,4 @@
-// http://www.andrewthorp.com/posts/github-theme-for-coderay 
+// http://www.andrewthorp.com/posts/github-theme-for-coderay
 .CodeRay {
   background-color: #efefef;
   font-family: Monaco, "Courier New", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", monospace;
@@ -13,35 +13,35 @@
 
 div.CodeRay { }
 span.CodeRay { white-space: pre; border: 0px; padding: 2px }
- 
+
 table.CodeRay { border-collapse: collapse; width: 100%; padding: 2px }
 table.CodeRay td {
   padding: 1em 0.5em;
   vertical-align: top;
 }
- 
+
 .CodeRay .line-numbers, .CodeRay .no {
   background-color: #ECECEC;
   color: #AAA;
   text-align: right;
 }
- 
+
 .CodeRay .line-numbers a {
   color: #AAA;
 }
- 
+
 .CodeRay .line-numbers tt { font-weight: bold }
 .CodeRay .line-numbers .highlighted { color: red }
 .CodeRay .line { display: block; float: left; width: 100%; }
 .CodeRay span.line-numbers { padding: 0px 4px }
 .CodeRay .code { width: 100% }
- 
+
 ol.CodeRay { font-size: 10pt }
 ol.CodeRay li { white-space: pre }
- 
+
 .CodeRay .code pre { overflow: auto }
 .CodeRay .debug { color:white ! important; background:blue ! important; }
- 
+
 .CodeRay .annotation { color:#007 }
 .CodeRay .attribute-name { color:#f08 }
 .CodeRay .attribute-value { color:#700 }
@@ -90,43 +90,43 @@ ol.CodeRay li { white-space: pre }
 .CodeRay .pseudo-class { color:#00C; font-weight:bold }
 .CodeRay .predefined-type { color:#074; font-weight:bold }
 .CodeRay .reserved, .keyword  { color:#000; font-weight:bold }
- 
+
 .CodeRay .key { color: #808; }
 .CodeRay .key .delimiter { color: #606; }
 .CodeRay .key .char { color: #80f; }
 .CodeRay .value { color: #088; }
- 
+
 .CodeRay .regexp { background-color:#fff0ff }
 .CodeRay .regexp .content { color:#808 }
 .CodeRay .regexp .delimiter { color:#404 }
 .CodeRay .regexp .modifier { color:#C2C }
 .CodeRay .regexp .function  { color:#404; font-weight: bold }
- 
+
 .CodeRay .string { color: #D20; }
 .CodeRay .string .string { }
 .CodeRay .string .string .string { background-color:#ffd0d0 }
 .CodeRay .string .content { color: #D14; }
 .CodeRay .string .char { color: #D14; }
 .CodeRay .string .delimiter { color: #D14; }
- 
+
 .CodeRay .shell { color:#D14 }
 .CodeRay .shell .content { }
 .CodeRay .shell .delimiter { color:#D14 }
- 
+
 .CodeRay .symbol { color:#990073 }
 .CodeRay .symbol .content { color:#A60 }
 .CodeRay .symbol .delimiter { color:#630 }
- 
+
 .CodeRay .tag { color:#070 }
 .CodeRay .tag-special { color:#D70; font-weight:bold }
 .CodeRay .type { color:#339; font-weight:bold }
 .CodeRay .variable  { color:#036 }
- 
+
 .CodeRay .insert { background: #afa; }
 .CodeRay .delete { background: #faa; }
 .CodeRay .change { color: #aaf; background: #007; }
 .CodeRay .head { color: #f8f; background: #505 }
- 
+
 .CodeRay .insert .insert { color: #080; font-weight:bold }
 .CodeRay .delete .delete { color: #800; font-weight:bold }
 .CodeRay .change .change { color: #66f; }

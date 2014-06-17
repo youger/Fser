@@ -1,12 +1,14 @@
 ---
 layout: post  
-title: "Apache+MySQL+PHP +codeigniter 模拟与服务器的交互"  
+title: "模拟与服务器的交互"  
 date: 2014-04-20 02:20  
 comments: true  
 thumbnail: /img/avatar.jpg  
 description: "最近接手一个项目，看demo算不上复杂，基本功能就是从服务器获取数据然后展示出来......"
 categories: 
 ---  
+    
+#利用Apache/MySQL/PHP/codeigniter搭建虚拟环境
 
 ##为什么
 
