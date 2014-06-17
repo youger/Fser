@@ -1,0 +1,14 @@
+---
+layout: post  
+title: "由来"  
+date: 2013-10-18 14:06  
+comments: true    
+thumbnail: /img/road.jpg  
+description: "Hello Fser."  
+categories:        
+
+---  
+
+#Hello Fser。
+
+[参考](http://beyondvincent.com/blog/2013/08/03/108-creating-a-github-blog-using-octopress/)
