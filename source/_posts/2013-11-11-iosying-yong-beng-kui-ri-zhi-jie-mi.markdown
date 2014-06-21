@@ -1,9 +1,10 @@
 ---
 layout: post  
 title: "iOS应用崩溃日志揭秘"  
-date: 2013-11-11 10:49  
-comments: true    
-thumbnail: /img/avatar.jpg 
+date: 2013-11-11 10:49
+comments: true  
+thumbnail: /img/avatar.jpg
+keywords: iOS, crashlytics    
 description: "最近收到用户反馈说新版本词典存在闪退问题，和PM各种测试也没发现闪退......"  
 categories:  
 
