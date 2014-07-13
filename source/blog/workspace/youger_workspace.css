@@ -1,0 +1,17 @@
+#u0_img {
+    //position:absolute;
+    left:0px;
+    top:0px;
+    width:380px;
+    height:800px;
+}
+
+.u0_normal {
+    background-image: url('u0_normal.png');
+}
+
+.u0_content{
+  position:relative;
+  left:30px;
+  top:136px;
+}
