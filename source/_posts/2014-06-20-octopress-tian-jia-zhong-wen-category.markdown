@@ -5,9 +5,9 @@ date: 2014-06-20 18:29:46 +0800
 comments: true    
 keywords: custom octopress,octopress category
 categories: octopress    
-thumbnail: img/octopress_logo.png
-description: "导航栏添加自定义category列表."
-excerpt: "前两天参考别人在侧边栏加category列表的方法给自己的博客添加个category导航。基本步骤..."  
+thumbnail: img/octopress_logo.png  
+description: "导航栏添加自定义category列表."  
+excerpt: "前两天参考别人在侧边栏加category列表的方法给自己的博客添加个category导航。基本步骤..."    
 
 ---
 
@@ -20,9 +20,10 @@ excerpt: "前两天参考别人在侧边栏加category列表的方法给自己�
 
 {% include_code category_list_tag.rb%}      
   
-[其次](class:label label-info)[：](class: hidden)jekyll的插件`category_generator.rb`默认在创建categories目录时是不存在`index.html`索引文件的，因为她无法知道你每次创建category的路径地址，所以我们只能手动在`source/blog/categories/`路径下创建`index.html`文件  
+[其次](class:label label-info)[：](class: hidden)jekyll的插件`category_generator.rb`默认在创建categories目录时是不存在`index.html`索引文件的， 因为她无法知道你每次创建category的路径地址， 所以我们只能手动在`source/blog/categories/`路径下创建`index.html`文件  
 
-{% codeblock lang:html index.html%}---
+{% codeblock lang:html index.html%}
+---
 layout: page
 title: Categories
 footer: false  
