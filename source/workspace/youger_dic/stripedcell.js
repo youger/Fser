@@ -30,11 +30,11 @@ function toggleBox(){
     var className = This[0].children[0].children[0].className;
     if(className == "icon-angle-down"){
 
-        className = "icon-angle-down";
+        className = "icon-angle-up";
 
     }else{
 
-        className = "icon-angle-up";
+        className = "icon-angle-down";
     }
     This[0].children[0].children[0].className = className;
 		open_on();

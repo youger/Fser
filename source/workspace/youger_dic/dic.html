@@ -1,0 +1,98 @@
+<html>
+<head>
+<title>RyuSys SuperDic</title>
+<meta http-equiv="Content-Type" name="viewport" content="initial-scale=1.0; minimum-scale=0.2; maximum-scale=4.0; text/html; charset=UTF-8">
+<!--script type="text/javascript" src="jquery.js"></script-->
+<!--jquery和jquery.min，$(this)返回的对象不同-->
+<script type="text/javascript" src="jquery.min-1.8.3.js"></script>
+<script type="text/javascript" src="change.js"></script>
+<script type="text/javascript" src="stripedcell.js"></script>
+<link rel="stylesheet" href="font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="superdic.css">
+</head>
+<body style="background-color: transparent" id=>
+<DIV class="word">fser<a id="word-button" onclick="alert('Oh, God! 妄想。')"></a></DIV>
+<DIV class="pron">[ˈfsə 美 -ər]<a id="sound-button" onclick="alert('No Sound!')"></a></DIV>
+<DIV>
+	<dl><ul>
+		n. ［英］abbreviation of find simpler
+	</dl></dl>
+</DIV><br>
+<p><a id="more-exp-button">折叠/展开</a></p>
+
+<DIV id="more" style="display:block">
+
+	<DIV class="title">
+		<a>百科解释<i class="icon-angle-down"></i></a>
+	</DIV>
+	<DIV style="display:none">
+		<dl><ul>n.自己创的词就别找百科了</ul></dl>
+	</DIV>
+	<DIV class="title">
+		<a>通俗解释<i class="icon-angle-up"></i></a>
+	</DIV>
+	<DIV>
+		<dl><ul>vi. 找寻更简洁的（方法）</ul></dl>
+	</DIV>
+	<DIV class="title">
+		<a>相关出处<i class="icon-angle-up"></i></a>
+	</DIV>
+	<DIV>
+		<dl><ul>【借鉴】<br />stay hungry, stay foolish</ul></dl>
+	</DIV>
+	<DIV class="title">
+		<a>名词词典<i class="icon-angle-up"></i></a>
+	</DIV>
+	<DIV>
+		<dl><ul>【搜索引擎】<br />费舍尔？</ul></dl>
+	</DIV>
+	<DIV class="title">
+		<a>详解词典<i class="icon-angle-down"></i></a>
+	</DIV>
+	<DIV style="display:none">
+		<dl><ul>你能告诉我你是怎么想的吗，这真的需要详解吗</ul></dl>
+	</DIV>
+	<DIV class = "title">
+		<a>例句<i class="icon-angle-up"></i></a>
+	</DIV>
+	<DIV id="sentence-contents">
+		<DIV>
+			<DIV style="margin:0px 0px 0px 10px">
+				<DIV style="float:left"><img src="./sentence.png" width="10" height="10" />&nbsp;</DIV>
+				<DIV style="margin:0px 8px 0px 18px; font-size:16px;">Is <b><font color='red'>fser</font></b> contagious?</DIV>
+				<DIV style="margin:0px 8px 0px 18px; font-size:16px;">fser传染吗?</DIV>
+			</DIV><br>
+		</DIV>
+		<DIV>
+			<DIV style="margin:0px 0px 0px 10px">
+				<DIV style="float:left"><img src="./sentence.png" width="10" height="10" />&nbsp;</DIV>
+				<DIV style="margin:0px 8px 0px 18px; font-size:16px;"><b><font color='red'>Fser</font></b> is psychology of learning.</DIV>
+				<DIV style="margin:0px 8px 0px 18px; font-size:16px;">fser是一种求知心理学。</DIV>
+			</DIV><br>
+		</DIV>
+		<DIV>
+			<DIV style="margin:0px 0px 0px 10px">
+				<DIV style="float:left"><img src="./sentence.png" width="10" height="10" />&nbsp;</DIV>
+				<DIV style="margin:0px 8px 0px 18px; font-size:16px;">Now tell me that you know what meaning of <b><font color='red'>fser</font></b>.</DIV>
+			</DIV><br>
+		</DIV>
+	</DIV>
+	<DIV>
+		<!--<form action="CSRF.html" id="test" method="get">
+	</br>word:<input type="text" name="keyword"/>
+</br>start:<input type="text" name="start" value="1"/>
+	</br>	number:<input type="text" name="num" value="3">
+		<input type="submit" value="submit">
+		</form>
+		<script>
+		var f=document.getElementById("test");
+		//f.submit();
+		$( document ).ajaxComplete(function() {
+			combine_more_cases(MyMoreDataJson);
+		});
+	</script>-->
+		<p><a id="more-sentence-button">更多例句</a></p>
+	</DIV>
+<DIV>
+	<p><a id="load-button">下载离线词典</a></p>
+</DIV>
