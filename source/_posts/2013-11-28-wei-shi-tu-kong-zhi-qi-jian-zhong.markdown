@@ -3,7 +3,7 @@ layout: post
 title: "[译]为视图控制器减重"  
 date: 2013-11-28 12:10  
 comments: true  
-thumbnail: /img/avatar.jpg  
+thumbnail: /img/water0.jpg  
 keywords: iOS, refactor, reuse, 重构, 复用  
 description: "在iOS项目中ViewController经常是最大的文件，而且还包含了很多不必须的代码......"  
 

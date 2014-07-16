@@ -5,7 +5,7 @@ date: 2014-07-09 16:51:15 +0800
 keywords: UINavigationBar, CocoaPods  
 comments: true  
 categories: iOS  
-thumbnail: img/dog2.jpg  
+thumbnail: img/pencil.jpg  
 description: 自定义UINavigationBar出现的问题  
 excerpt: 今天就遇到因为不同的适配方法带来的UI问题。主项目通过继承导航控制器…… 
 

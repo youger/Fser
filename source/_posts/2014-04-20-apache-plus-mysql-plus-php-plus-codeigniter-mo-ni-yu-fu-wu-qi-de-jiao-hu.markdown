@@ -3,7 +3,7 @@ layout: post
 title: "模拟与服务器的交互"  
 date: 2014-04-20 02:20  
 comments: true  
-thumbnail: /img/avatar.jpg  
+thumbnail: img/building0.jpg  
 keywords: iOS, apache, 模拟服务器  
 description: "最近接手一个项目，看demo算不上复杂，基本功能就是从服务器获取数据然后展示出来......"  
 categories:  
