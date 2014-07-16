@@ -4,7 +4,7 @@
 
 url: http://youger.github.io
 title: Fser
-subtitle: 幽心如梦.
+subtitle: 迷蒙的醒不如热烈的梦，幽心如梦.
 author: youger
 simple_search: https://218.189.25.132/search
 description: A hungry hunter.
@@ -109,3 +109,7 @@ google_analytics_tracking_id:
 
 # Weibo share
 weibo_share: true
+
+# search engine
+typekit_kitid: "hmm6mfe"
+search_posts: true

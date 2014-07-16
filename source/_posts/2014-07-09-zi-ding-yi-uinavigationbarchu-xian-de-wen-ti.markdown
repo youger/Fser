@@ -1,8 +1,9 @@
 ---
-layout: post
-title: "自定义UINavigationBar出现的问题"
-date: 2014-07-09 16:51:15 +0800
-comments: true
+layout: post  
+title: "自定义UINavigationBar出现的问题"  
+date: 2014-07-09 16:51:15 +0800  
+keywords: UINavigationBar, CocoaPods  
+comments: true  
 categories: iOS  
 thumbnail: img/dog2.jpg  
 description: 自定义UINavigationBar出现的问题  

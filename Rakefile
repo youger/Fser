@@ -22,6 +22,7 @@ blog_index_dir  = 'source'    # directory for your blog's index page (if you put
 deploy_dir      = "_deploy"   # deploy directory (for Github pages deployment)
 stash_dir       = "_stash"    # directory to stash posts for speedy generation
 posts_dir       = "_posts"    # directory for blog files
+private_dir     = "_private"  # directory for private posts
 themes_dir      = ".themes"   # directory for blog files
 new_post_ext    = "markdown"  # default new post file extension when using the new_post task
 new_page_ext    = "markdown"  # default new page file extension when using the new_page task
@@ -109,11 +110,22 @@ task :new_post, :title do |t, args|
   end
   puts "Creating new post: #{filename}"
   open(filename, 'w') do |post|
-    post.puts "---"
-    post.puts "layout: post"
-    post.puts "title: \"#{title.gsub(/&/,'&amp;')}\""
-    post.puts "date: #{Time.now.strftime('%Y-%m-%d %H:%M:%S %z')}"
-    post.puts "comments: true"
+    post.puts "---  "
+    post.puts "layout: post  "
+    post.puts "title: \"#{title.gsub(/&/,'&amp;')}\"  "
+    post.puts "date: #{Time.now.strftime('%Y-%m-%d %H:%M:%S %z')}  "
+    post.puts "comments: true  "
+    post.puts "keywords: "
+    post.puts "thumbnail: "
+    post.puts "cover: "
+    post.puts "cover_alt: "
+    post.puts "cover_caption: "
+    post.puts "cover_link: "
+    post.puts "cover_title: "
+    post.puts "cover_width: "
+    post.puts "lettrine: "
+    post.puts "content_class: centering"
+    post.puts "excerpt: "
     post.puts "categories: "
     post.puts "---"
   end
@@ -171,6 +183,25 @@ end
 desc "Move all stashed posts back into the posts directory, ready for site generation."
 task :integrate do
   FileUtils.mv Dir.glob("#{source_dir}/#{stash_dir}/*.*"), "#{source_dir}/#{posts_dir}/"
+end
+
+# usage rake private[my-post]
+desc "Move the post that do not want to be published to private folder."
+task :private, :filename do |t, args|
+  private_dir = "#{source_dir}/#{private_dir}"
+  FileUtils.mkdir(private_dir) unless File.exist?(private_dir)
+  Dir.glob("#{source_dir}/#{posts_dir}/*.*") do |post|
+    FileUtils.mv post, private_dir if post.include?(args.filename)
+  end
+end
+
+# usage rake public[my-post]
+desc "Move the post that do not want to be published to private folder."
+task :public, :filename do |t, args|
+
+  Dir.glob("#{source_dir}/#{private_dir}/*.*") do |post|
+    FileUtils.mv post, "#{source_dir}/#{posts_dir}/" if post.include?(args.filename)
+  end
 end
 
 desc "Clean out caches: .pygments-cache, .gist-cache, .sass-cache"
@@ -252,7 +283,7 @@ desc "deploy public directory to github pages"
 multitask :push do
   puts "## Deploying branch to Github Pages "
   puts "## Pulling any updates from Github Pages "
-  cd "#{deploy_dir}" do 
+  cd "#{deploy_dir}" do
     system "git pull"
   end
   (Dir["#{deploy_dir}/*"]).each { |f| rm_rf(f) }

@@ -3,8 +3,8 @@ layout: post
 title: "为Octopress添加Category"  
 date: 2014-06-20 18:29:46 +0800  
 comments: true    
-keywords: custom octopress,octopress category
-categories: octopress    
+keywords: customize octopress,octopress category
+categories: Octopress    
 thumbnail: img/octopress_logo.png  
 description: "导航栏添加自定义category列表."  
 excerpt: "前两天参考别人在侧边栏加category列表的方法给自己的博客添加个category导航。基本步骤..."    
