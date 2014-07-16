@@ -1,0 +1,18 @@
+---  
+layout: post  
+title: "test"  
+date: 2014-07-16 11:54:45 +0800  
+comments: true  
+keywords: 
+thumbnail: 
+cover: 
+cover_alt: 
+cover_caption: 
+cover_link: 
+cover_title: 
+cover_width: 
+lettrine: 
+content_class: centering
+excerpt: 
+categories: 
+---
