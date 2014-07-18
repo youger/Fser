@@ -196,7 +196,7 @@ task :private, :filename do |t, args|
 end
 
 # usage rake public[my-post]
-desc "Move the post that do not want to be published to private folder."
+desc "Move out the post that had finished."
 task :public, :filename do |t, args|
 
   Dir.glob("#{source_dir}/#{private_dir}/*.*") do |post|

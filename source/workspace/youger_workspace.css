@@ -21,4 +21,6 @@
   position:relative;
   left:30px;
   top:136px;
+  //-webkit-overflow-scrolling: touch !important;
+  //overflow: auto !important;
 }

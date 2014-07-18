@@ -252,3 +252,12 @@ figure.code {
   text-shadow: #cbcccc 0 1px 0;
   padding-left: 3em;
 }
+
+pre {
+    overflow-x: auto;
+}
+
+pre code {
+    word-wrap: normal;
+    white-space: pre;
+}
